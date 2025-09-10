@@ -8,7 +8,7 @@ This action wraps the Slack [chat.postMessage](https://api.slack.com/methods/cha
 - name: Notify slack
   env:
     SLACK_BOT_TOKEN: ${{ secrets.SLACK_BOT_TOKEN }}
-  uses: pullreminders/slack-action@master
+  uses: SpareRoom/slack-action@main
   with:
     args: '{\"channel\":\"C1234567890\",\"text\":\"Hello world\"}'
 ```
@@ -64,7 +64,3 @@ If the channel is private, you'll need to install the App in that channel.
 #### Formatting messages
 
 Please refer to [Slack's documentation](https://api.slack.com/docs/messages) on message formatting. They also have a [message builder](https://api.slack.com/docs/messages/builder) that's great for playing around and previewing messages. Your messages can contain attachments, markdown, buttons, and more.
-
-## License
-
-The Dockerfile and associated scripts and documentation in this project are released under the [MIT License](LICENSE).
